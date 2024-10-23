@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PASTA</title>
+    <style>
+        header {
+            display: flex;
+            position: fixed;
+            font-family: Albertus medium;
+            bottom: 1;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        h1 {
+            font-family: showcard gothic;
+            font-size: 50px;
+            color: rgb(235, 243, 250);
+            text-align: center;
+        }
+
+        h2 {
+            font-family: albertus medium;
+            font-size: 40px;
+            color: rgb(17, 22, 12);
+            text-align: center;
+        }
+
+        .main {
+            width: 90%;
+            /* Adjust width for responsiveness */
+            max-width: 900px;
+            /* Set a maximum width */
+            height: auto;
+            background-color: aliceblue;
+            border-radius: 5px;
+            border: 2px solid brown;
+            margin: 0 auto;
+
+        }
+
+        .image-container {
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        h1:hover {
+            color: rgb(78, 45, 109);
+            transition: 0.9s;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .steps {
+                width: 95%;
+                /* Increase width for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body style="font-size: larger;">
+    <header>
+        <a style="text-decoration: none;" href="/RECIPE.HTML">
+            <h1>BACK</h1>
+        </a>
+    </header>
+
+    <br><br><br><br>
+
+    <main>
+        <button id="scrollToTopBtn" class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+        <div class="main">
+
+            <h2>
+                Pasta with Sausage, Basil, and Mustard
+            </h2>
+            <p>In matching spicy sausage with a creamy mustard sauce and fragrant basil, British cookbook author Nigel
+                Slater created a quick pasta supper with warm, mildly spicy flavors</p>
+            <h2>
+                Ingredients
+            </h2>
+            <ul>
+                <li>
+                    1 pound penne, rigatoni, or medium shells
+                </li>
+                <li>
+                    1 tablespoon extra-virgin olive oil
+                </li>
+                <li>
+                    8 hot Italian sausages, meat removed from casings and crumbled (about 1 1/2 pounds)
+                </li>
+                <li>
+                    3/4 cup dry white wine
+                </li>
+                <li>
+                    3/4 cup heavy cream
+                </li>
+                <li>
+                    3 tablespoons grainy mustard
+                </li>
+                <li>
+                    Pinch of crushed red pepper
+                </li>
+                <li>
+
+                    1 cup thinly sliced basil
+                </li>
+            </ul>
+
+            <h2>Directions</h2>
+            <h3>Step:1</h3>
+            <div class="image-container" style="background-image: url(./gallery/p1.jpg);">
+            </div>
+            <p style="text-align: center;">Gather ingredients.</p>
+
+            <h3>Step: 2</h3>
+            <div class="image-container" style="background-image: url(./gallery/p2.jpg); "></div>
+            <p style="text-align: center;">Cook the pasta in a large pot of boiling salted water until al dente and then
+                drain. </p>
+
+            <h3>Step: 3</h3>
+            <div class="image-container" style="background-image: url(./gallery/p3.jpg);"></div>
+            <p style="text-align: center;">Meanwhile, heat the olive oil in a large, deep skillet. Add the sausage meat
+                and brown over moderately high heat, about 5 minutes.</p>
+
+
+            <h3>Step: 4</h3>
+            <div class="image-container" style="background-image: url(./gallery/p4.jpg);"></div>
+            <p style="text-align: center;">Add the wine and simmer, scraping up the browned bits from the bottom, until
+                reduced by half, about 5 minutes.</p>
+
+
+            <h3>Step: 5</h3>
+            <div class="image-container" style="background-image: url(./gallery/p55.jpg);"></div>
+            <p style="text-align: center;"> Add the cream, mustard, and crushed red pepper and simmer for 2 minutes.</p>
+
+
+            <h3>Step: 6</h3>
+            <div class="image-container" style="background-image: url(./gallery/p5.jpg);"></div>
+            <p style="text-align: center;">Remove the skillet from the heat, add the pasta and basil, and toss to coat.
+            </p>
+
+            <h3>Step: 7</h3>
+            <div class="image-container" style="background-image: url(./gallery/pasta.jpg);"></div>
+            <p style="text-align: center;">Serve at once.</p>
+
+        </div>
+        <script>
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    scrollToTopBtn.classList.remove('hidden');
+
+                } else {
+                    scrollToTopBtn.classList.add('hidden');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+
+                });
+            });
+        </script>
+    </main>
+
+</body>
+
+</html>

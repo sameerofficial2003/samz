@@ -1,0 +1,146 @@
+ul {
+    position: fixed;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    list-style-type: none;
+    background-color: transparent;
+    margin-top: 0;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+ul>li {
+    display: inline;
+    margin-left: 600px;
+    font-size: 30px;
+    font-family: Showcard Gothic;
+
+}
+
+ul li:hover {
+
+    cursor: grab;
+    background-color: rgb(43, 43, 33);
+    transition: 0.9s;
+
+}
+
+h1 {
+    color: rgb(230, 255, 1);
+    font-family: Albertus Medium;
+    text-align: center;
+    display: block;
+    font-size: 50px;
+}
+
+h1:hover {
+    color: antiquewhite;
+    transition: 0.9s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+body {
+    background-image: url(./GALLERY/univ.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:
+        center center;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container {
+
+    display: flex;
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 2000px;
+    transition: all 0.5s ease-in-out;
+    border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 12px solid blue;
+    border-left: 12px solid yellow;
+
+}
+
+.main {
+    width: 1120px;
+    height: 950px;
+    background-color: rgb(230, 230, 196);
+    border: 10px solid rgb(75, 43, 43);
+    border-radius: 20px;
+    margin: 0 auto;
+    font-family: Albertus Medium;
+    align-items: center;
+    color: rgb(56, 56, 43);
+
+}
+
+.image-container p {
+    text-align: center;
+    font-size: 30px;
+    font-family: showcard gothic;
+    color: rgb(250, 79, 26);
+}
+
+.image-container :hover {
+
+    color: rgb(131, 110, 110);
+    transition: 0.4s;
+}
+
+head {
+    display: flex;
+    position: fixed;
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b5f0ff;
+    color: rgb(14, 8, 8);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    z-index: +1;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #000000;
+    cursor: grab;
+    color: yellow;
+    filter: drop-shadow(0px 0px 6px yellow);
+    transition: 0.9s;
+}
+
+.scrollToTopBtn.hidden {
+    display: none;
+}

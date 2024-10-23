@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="work.css">
+
+        <title>CONTENT</title>
+
+</head>
+
+<body style="background-image: url(./GALLERY/BACKGROUND\ \(2\).jpg); ">
+
+        <div class="first">
+                <div class="icon-bar" ;">
+
+                        <a href="./work.html"><i class="fa fa-home"></i></a>
+                        <a href="https://www.google.com/"><i class="fa fa-search"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="active" href="#"><i class="fa fa-bars"></i></a>
+                </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <button id="scrollToTopBtn" class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+        <main>
+                <div class="p2">
+                        <a class="two" href="./GALLERY.HTML">
+                                <div class="image-container" style="background-image: url(./GALLERY/1.jpg);">
+                                        <h2 style="font-size: 50px;"> ART GALLERY <br>.</h2>
+                                </div>
+                        </a>
+
+                        <a class="two" href="./PSL STANDINGS.HTML">
+                                <div class="image-container" style="background-image: url(./GALLERY/cric.jpg);">
+                                        <h2 style="font-size: 50px;">POINTS TABLE<br>.</h2>
+                                </div>
+                        </a>
+                        <br>
+                        <br>
+                        <a class="two" href="./RECIPE.HTML">
+                                <div class="image-container" style="background-image: url(./GALLERY/recipe.jpg);">
+                                        <h2 style="font-size: 50px;">RECIPES<br>.</h2>
+                                </div>
+                        </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="p2">
+                        <a class="two" href="./COURSE.HTML">
+                                <div class="image-container" style="background-image: url(./GALLERY/job.jpg);">
+                                        <h2 style="font-size: 50px;"> COURSES<br>.</h2>
+                                </div>
+                        </a>
+
+                        <a class="two" href="./CATALOG.HTML">
+                                <div class="image-container" style="background-image: url(./GALLERY/product.jpg);">
+                                        <h2 style="font-size: 50px; ">PRODUCT <br> CATALOG<br>.</h2>
+                                </div>
+                        </a>
+                        <br>
+                        <br>
+                        <a class="two" href="./Travel Booking.HTML">
+                                <div class="image-container" style="background-image: url(./GALLERY/travels.jpg);">
+                                        <h2 style="font-size: 50px; ">TRAVELS<br>.</h2>
+                                </div>
+                        </a>
+                </div>
+
+        </main>
+        <script>
+                const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+                window.addEventListener('scroll', () => {
+                        if (window.scrollY > 100) {
+                                scrollToTopBtn.classList.remove('hidden');
+
+                        } else {
+                                scrollToTopBtn.classList.add('hidden');
+                        }
+                });
+
+                scrollToTopBtn.addEventListener('click', () => {
+                        window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+
+                        });
+                });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product catalog</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ALL.CSS">
+    <style>
+        body {
+            background-image:
+                url(./GALLERY/product.jpg);
+        }
+
+        .image-container {
+            height: 300px;
+            /* Adjust height for responsiveness */
+            width: 80%;
+            /* Adjust width for responsiveness */
+            margin: 0 auto;
+            /* Center image */
+        }
+
+        .main {
+            width: 90%;
+            /* Adjust width for responsiveness */
+            max-width: 500px;
+            /* Set a maximum width */
+            margin: 0 auto;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .adj {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line on smaller screens */
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <a style="text-decoration: none; color: aliceblue;" href="/CONTENTS.HTML" ;>
+
+        <h1>BACK</h1>
+    </a>
+    <br><br>
+    <main>
+        <div class="adj">
+            <div class="main">
+                <div class="image-container" style="background-image: url(./GALLERY/B\ \(1\).jpg);">
+                </div>
+                <h3>SAMSUNG S22 ULTRA</h3>
+                <h4>DESCRIPTION:</h4>
+                <ol>
+                    <li>S Pen: Offers precise control and various creative features.</li>
+                    <li>Powerful Processor: Handles demanding tasks effortlessly.</li>
+                    <li>Advanced Camera System: Captures stunning photos and videos.</li>
+                    <li>Large, high-resolution display: Immersive viewing experience.</li>
+                    <li>Long-lasting battery life: Powers through the day.</li>
+                </ol>
+                <h3>PRICE: 165K</h3>
+            </div>
+            <br><br>
+
+            <button id="scrollToTopBtn" class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+            <div class="main">
+                <div class="image-container" style="background-image: url(./GALLERY/B\ \(2\).jpg);">
+                </div>
+                <h3>SMART WATCH</h3>
+
+                <h4>DESCRIPTION:</h4>
+                <ol>
+                    <li>Heart rate monitoring: Real-time and continuous heart rate tracking.</li>
+                    <li>Step counting and calorie tracking: Monitoring daily activity and progress.</li>
+                    <li>Sleep tracking: Analyzing sleep patterns and quality.</li>
+                    <li>GPS: Tracking outdoor activities like running, cycling, and hiking.</li>
+                    <li>Blood oxygen level monitoring: Measuring SpO2 levels.</li>
+                    <li>Stress management: Monitoring stress levels and providing relaxation techniques.</li>
+
+                </ol>
+                <h3>PRICE: 16K</h3>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="adj">
+            <div class="main">
+                <div class="image-container" style="background-image: url(./GALLERY/B\ \(3\).jpg);">
+                </div>
+                <h3>WIRELESS HEAPHONE</h3>
+                <h4>DESCRIPTION:</h4>
+                <ol>
+                    <li>Drivers: The size and quality of the drivers determine the sound output. </li>
+                    <li> Frequency Response: The range of sound frequencies the headphones can reproduce.</li>
+
+                    <li>Noise Isolation: Reduces ambient noise without active technology.</li>
+                    <li>Active Noise Cancellation (ANC): Electronically reduces background noise</li>
+
+                </ol>
+                <h3>PRICE: 25K</h3>
+            </div>
+            <br><br>
+            <div class="main">
+                <div class="image-container" style="background-image: url(./GALLERY/B\ \(4\).jpg);">
+                </div>
+                <h3>DRONE CAMERA</h3>
+                <h4>DESCRIPTION:</h4>
+                <ol>
+                    <li>Resolution: Higher resolution means sharper images and videos. </li>
+                    <li>Sensor size: Larger sensors capture more light, resulting in better low-light performance and
+                        dynamic range. </li>
+                    <li>Dynamic range: The camera's ability to capture detail in both bright and dark areas.</li>
+                    <li>Video frame rate: Determines the smoothness of the video.</li>
+                    <li>Video codecs: Determines the video compression format.</li>
+
+                </ol>
+                <h3>PRICE: 82K</h3>
+            </div>
+        </div>
+    </main>
+    <script>
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                scrollToTopBtn.classList.remove('hidden');
+
+            } else {
+                scrollToTopBtn.classList.add('hidden');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+
+            });
+        });
+    </script>
+</body>
+
+</html>
